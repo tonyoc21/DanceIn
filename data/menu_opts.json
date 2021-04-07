@@ -1,0 +1,20 @@
+{
+    "nombreApp" : "Componentes",
+    "rutas" : [
+        {
+            "ruta" : "eventos",
+            "icon" : "eventos",
+            "texto": "Eventos"
+        },
+        {
+            "ruta" : "avatar",
+            "icon" : "accessibility",
+            "texto": "Avatars"
+        },
+        {
+            "ruta" : "academias",
+            "icon" : "academias",
+            "texto": "Academias"
+        }
+    ]
+}
