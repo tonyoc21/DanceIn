@@ -7,61 +7,44 @@ class InicioApp extends StatefulWidget {
   _InicioAppState createState() => _InicioAppState();
 }
 
+//Página inicial, utiliza un boton para realizar el registro
+
 class _InicioAppState extends State<InicioApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[50],
+      backgroundColor: Colors.blueGrey[100],
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 90.0),
         children: <Widget>[
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('DANCE IN'),
-              Divider(
-                height: 40.0,
+              Text(
+                'DANCE IN',
+                style: TextStyle(fontSize: 50.0),
               ),
+
               CircleAvatar(
-                radius: 100.0,
-                backgroundColor: Colors.grey,
-                // backgroundImage: AssetImage('xxx.png'),
+                radius: 170.0,
+                backgroundColor: Colors.blueGrey[100],
+                child: Container(
+                    child:
+                        Image.asset("images/imagen3.jpg", fit: BoxFit.cover)),
               ),
-              Divider(
-                height: 18.0,
-              ),
+              //Registrar academia
               SizedBox(
                 // ignore: deprecated_member_use
                 child: FlatButton(
-                  hoverColor: Colors.lightBlue,
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("/login");
-                  },
-                  child: Text(
-                    'Iniciar Sesión',
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 30.0,
-                    ),
-                  ),
-                  color: Colors.lightBlueAccent,
-                ),
-              ),
-              Divider(
-                height: 18.0,
-              ),
-              SizedBox(
-                // ignore: deprecated_member_use
-                child: FlatButton(
-                  hoverColor: Colors.lightBlue,
+                  hoverColor: Colors.black,
                   onPressed: () {
                     Navigator.of(context).pushNamed("/homepage");
                   },
                   child: Text(
-                    'Registrarse',
+                    'Registrarte',
                     style: TextStyle(
                       color: Colors.white70,
-                      fontSize: 30.0,
+                      fontSize: 40.0,
                     ),
                   ),
                   color: Colors.lightBlueAccent,

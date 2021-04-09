@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/src/Init.dart';
 import 'package:flutter_application_1/src/Login.dart';
-import 'package:flutter_application_1/src/My_Home_Page.dart';
-import 'package:flutter_application_1/src/Second_Home_Page.dart';
+import 'package:flutter_application_1/src/Registro.dart';
+import 'package:flutter_application_1/src/ViewDate.dart';
 
 void main() {
   runApp(MyApp());
